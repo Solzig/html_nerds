@@ -1,0 +1,45 @@
+.modal
+  display: none
+  position: absolute
+  z-index: 9
+  width: 960px
+  min-height: 590px
+  padding: 70px 100px 30px
+  background: #ffffff
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75)
+  &_active
+    display: block
+  &_contact
+    bottom: 180px
+    left: 50%
+    transform: translateX(-50%)
+  &__contact-form
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap  
+  &__title
+    font-weight: 500
+    font-size: 45px
+    line-height: 45px
+    margin: 0
+    margin-bottom: 20px
+    font-family: roboto-bold, Arial, Helvetica, sans-serif
+  &__close 
+    position: absolute
+    top: 78px
+    right: 90px
+    margin: 0
+    padding: 0
+    background: transparent
+    border: 0
+  &__item
+    display: flex
+    flex-direction: column
+    width: 360px
+    margin-right: 40px
+    margin-bottom: 13px
+    &:nth-child(2n)
+      margin-right: 0px
+  &__textarea
+    width: 100%
+    margin-right: 0      
