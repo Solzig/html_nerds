@@ -1,6 +1,6 @@
 .modal
   display: none
-  position: absolute
+  position: fixed
   z-index: 9
   width: 960px
   min-height: 590px
@@ -10,9 +10,9 @@
   &_active
     display: block
   &_contact
-    bottom: 180px
+    bottom: 50vh
     left: 50%
-    transform: translateX(-50%)
+    transform: translateX(-50%) translateY(50%)
   &__contact-form
     display: flex
     flex-direction: row

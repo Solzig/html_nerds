@@ -2,7 +2,7 @@
   &__wrapper 
     margin-bottom: 80px
     padding: 50px 0 34px
-    border-bottom: 1px solid #eeeeee
+    border-bottom: 1px solid $color-gray-light
   &__list 
     display: flex
     flex-direction: row
@@ -13,11 +13,13 @@
     list-style: none
   &__item 
     position: relative
-    padding-right: 5%
     left: 10px
+    padding-right: 5%
     & img
       opacity: 0.2
       &:hover
+        opacity: 1
+      &:active  
         opacity: 1  
     &:last-child
       &:after
@@ -29,5 +31,5 @@
       right: 0
       width: 2px
       height: 52px
-      background-color: #eeeeee
+      background-color: $color-gray-light
       transform: translateY(-50%)

@@ -2,9 +2,14 @@
   box-sizing: border-box
   &:before, &:after
     box-sizing: border-box
-
+  &:focus
+    outline: transparent
   html, body
   	height: 100%
+
+a
+  color: inherit
+  text-decoration: none
 
 body
   position: relative
@@ -19,9 +24,9 @@ body
 .header-main
   display: inline-block
   width: 100%
-  background-color: $color-gray-bg  
+  background-color: $color-gray-light
 .hero
-  background-color: $color-gray-bg      
+  background-color: $color-gray-light    
 .img-responsive
   display: block
   max-width: 100%
