@@ -14,7 +14,7 @@
     padding: 0
     list-style: none
   &__social
-    & li 
+    &-item
       display: flex
       flex-direction: column
       justify-content: center
@@ -22,21 +22,21 @@
       margin-right: 11px
       &:last-child
         margin-right: 0
-      & a
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 79px
-        height: 79px
-        background-color: #e1e1e1
-        border-radius: 50%  
-        &:hover  
-          background-color: #e74246
-        &:active
-          background-color: #d7373b
-          box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1)
-          & svg > path
-            opacity: 0.5
+    &-link
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 79px
+      height: 79px
+      background-color: #e1e1e1
+      border-radius: 50%  
+      &:hover  
+        background-color: #e74246
+      &:active
+        background-color: #d7373b
+        box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1)
+        & svg > path
+          opacity: 0.5
   
 
   &__offer
