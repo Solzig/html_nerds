@@ -2,6 +2,10 @@
   &__wrapper
     position: relative
     padding: 70px 0 42px
+  &__slider
+    display: none
+    &--active
+      display: block
   &__title 
     margin: 0
     margin-bottom: 28px
@@ -34,7 +38,7 @@
     background: #ffffff
     border-radius: 50%
     cursor: pointer
-    &_active
+    &--active
       cursor: default
       &:before 
         content: ''
