@@ -1,0 +1,102 @@
+.button 
+  display: inline-block
+  width: 100%
+  max-width: 160px 
+  max-height: 50px
+  padding: 14px 40px
+  text-align: center
+  color: #ffffff
+  text-transform: uppercase
+  text-decoration: none
+  background: #fb565a
+  border-radius: 2px
+  border: transparent
+  &:hover
+    background-color: #e74246
+  &:active
+    background-color: #d7373b
+    box-shadow: inset 0px 3px 0 #c13135
+    & span
+      opacity: 0.2
+  &--big
+    max-width: 240px
+  &--service
+    order: 4
+  &--green
+    background-color: #00cb73
+    &:hover
+      background-color: #00bc6c
+    &:active
+      background-color: #00aa62
+      box-shadow: inset 0px 3px 0 #009958
+      & span
+        opacity: 0.2
+  &--yellow 
+    background-color: #efc84a  
+    &:hover
+      background-color: #eab534
+    &:active
+      background-color: #eab534
+      box-shadow: inset 0px 3px 0 #eab534
+      & span
+        opacity: 0.2
+  &--medium
+    max-width: 220px  
+  &--modal
+    max-width: 260px
+    margin-top: 32px
+    padding: 16px 40px
+  &--grey
+    max-width: 360px
+    color: black
+    font-family: roboto-medium, Arial, Helvetica, sans-serif
+    background-color: #eeeeee
+    &:hover
+      background-color: #dfdfdf
+    &:active
+      background-color: #d5d5d5
+      box-shadow: inset 0px 3px 0 #bfbfbf
+      & span
+        opacity: 0.2
+  &--buy
+    max-width: 200px
+  &--pagination
+    max-width: 260px  
+    max-height: 52px 
+
+label
+  margin-bottom: 6px
+  font-size: 16px
+  font-family: roboto-bold
+  cursor: pointer
+
+input
+  padding: 15px 13px
+  color: #444444
+  background-color: #ffffff
+  border: 2px solid #d7dcde
+  border-radius: 3px    
+  opacity: 0.5
+  &:focus
+    border-color: #000000
+    outline: none
+    opacity: 1
+  &:invalid
+    color:#e74246
+    border-color: #e74246  
+    opacity: 1
+textarea
+  padding: 12px
+  color: #444444
+  background-color: #ffffff
+  border: 2px solid #d7dcde
+  border-radius: 3px
+  opacity: 0.5
+  &:focus
+    border-color: #000000
+    outline: none
+    opacity: 1
+  &:invalid
+    color:#e74246
+    border-color: #e74246      
+    opacity: 1

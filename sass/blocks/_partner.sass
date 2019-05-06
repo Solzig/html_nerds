@@ -1,0 +1,35 @@
+.partner
+  &__wrapper 
+    margin-bottom: 80px
+    padding: 50px 0 34px
+    border-bottom: 1px solid $color-gray-light
+  &__list 
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    margin: 0
+    padding: 0
+    list-style: none
+  &__item 
+    position: relative
+    left: 10px
+    padding-right: 5%
+    & img
+      opacity: 0.2
+      &:hover
+        opacity: 1
+      &:active  
+        opacity: 1  
+    &:last-child
+      &:after
+        display: none
+    &:after
+      content: ""
+      position: absolute
+      top: 50%
+      right: 0
+      width: 2px
+      height: 52px
+      background-color: $color-gray-light
+      transform: translateY(-50%)

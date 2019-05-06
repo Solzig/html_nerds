@@ -1,0 +1,42 @@
+*
+  box-sizing: border-box
+  &:before, &:after
+    box-sizing: border-box
+  &:focus
+    outline: transparent
+  html, body
+  	height: 100%
+body
+  position: relative
+  margin: 0
+  padding: 0
+  font-weight: 400
+  font-size: 16px
+  line-height: 24px
+  font-family: "roboto-base", Arial, sans-serif
+  color: $color-basefont
+  background-color: #ffffff
+.header-main
+  display: inline-block
+  width: 100%
+  background-color: $color-gray-light
+.hero
+  background-color: $color-gray-light    
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto  
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden 
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  overflow: hidden
+  white-space: nowrap
+  border: 0
+  clip: rect(0 0 0 0)
+  clip-path: inset(100%)

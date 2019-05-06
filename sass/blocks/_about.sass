@@ -1,0 +1,87 @@
+.about
+  &__wrapper
+    padding: 73px 0px 50px
+    border-bottom: 1px solid #eeeeee
+  &__block
+    display: flex
+    flex-direction: row
+    justify-content: space-between  
+  &__left 
+    max-width: 655px    
+  &__title 
+    margin: 0
+    margin-bottom: 34px
+    font-weight: 500
+    font-size: 44px
+    line-height: 45px
+    font-family: roboto-bold
+    color: #000000
+  &__description 
+    display: inline-block
+    margin-bottom: 40px
+  &__subtitle 
+    margin: 0
+    font-size: 16px
+    color: #000000
+    text-transform: uppercase
+    letter-spacing: 0.15px
+  &__list 
+    margin: 24px 0
+    padding-left: 35px
+    list-style: none
+    & li 
+      position: relative
+      margin-bottom: 24px
+      &:before 
+        content: ''
+        position: absolute
+        top: 10px
+        left: -35px
+        width: 25px
+        height: 3px
+        background: #fb565a
+  &__right 
+    max-width: 360px
+    text-align: center
+  &__image
+    position: relative
+    top: -34px
+    margin-bottom: -4px
+  &__percent
+    &-list 
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      margin: 45px 0
+      padding: 0
+      list-style: none
+    &-number 
+      position: relative
+      display: block
+      font-weight: 700
+      font-size: 45px
+      line-height: 40px
+      font-family: roboto-bold
+      color: #000000
+      &:before 
+        content: '%'
+        position: absolute
+        top: -10px
+        right: -18px
+        font-size: 0.5em
+        font-family: roboto-bold
+    &-item 
+      position: relative
+      display: flex
+      flex-direction: column
+      margin-right: 42px
+      &:last-child 
+        margin-right: 0
+    &-text 
+      position: absolute
+      top: 58px
+      display: inline-block
+      max-width: 100px
+      font-size: 17px
+      line-height: 20px
+      text-align: left
