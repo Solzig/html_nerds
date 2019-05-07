@@ -196,7 +196,7 @@
               <li class="pagination__item pagination__item--curret">1</li>
               <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
               <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-              <li class="pagination__item button button_pagination"><a class="pagination__link" href="#">Следующая</a></li>
+              <li class="pagination__item button button--pagination"><a class="pagination__link" href="#">Следующая</a></li>
             </ul>
             <!-- /.pagination -->
           </div>
@@ -214,7 +214,7 @@
                   <span class="contact__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</span>
                   <span class="contact__phone">тел. +7 (812) 275-75-75</span>
                 </address>
-                <button href="#" id="modal-open" class="button button_medium">Напишите нам</button>
+                <button href="#" id="modal-open" class="button button--medium">Напишите нам</button>
             </div>
           </div>
       </div>
@@ -253,33 +253,29 @@
     </div>
   </footer>
   <!-- /.footer-site -->
-  <section id="modal" class="modal modal_contact">
-    <h2 class="modal__title">Напишите нам</h2>
-
-    <form class="modal__contact-form" action="https://echo.htmlacademy.ru" method="post">
-
-      <p class="modal__item">
-        <label for="modal-name">Ваше имя:</label>
-        <input id="modal-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-      </p>
-      <p class="modal__item">
-        <label for="modal-email">Ваш e-mail:</label>
-        <input id="modal-email" type="email" name="email" value="" placeholder="email@example.com">
-      </p>
-      <p class="modal__item modal__textarea">
-        <label for="modal-textarea">Текст письма:</label>
-        <textarea id="modal-textarea" name="text" placeholder="В свободной форме" rows="5"></textarea>
-      </p>
-      <button class="button button_modal" type="submit">Отправить</button>
-    </form>
-
-    <button id="modal-close" class="modal__close" type="button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-        <path fill="#FB565A"
-          d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z" />
-        </svg>
-      <span class="visually-hidden">Закрыть</span>
-    </button>
+  <section id="modal" class="modal modal--contact">
+    <div class="modal__wrapper">
+        <h2 class="modal__title">Напишите нам</h2>
+        <form class="modal__contact-form" action="https://echo.htmlacademy.ru" method="post"> 
+          <p class="modal__item">
+            <label for="modal-name">Ваше имя:</label>
+            <input id="modal-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal__item">
+            <label for="modal-email">Ваш e-mail:</label>
+            <input id="modal-email" type="email" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p class="modal__item modal__textarea">
+            <label for="modal-textarea">Текст письма:</label>
+            <textarea id="modal-textarea" name="text" placeholder="В свободной форме" rows="5"></textarea>
+          </p>
+          <button class="button button_modal" type="submit">Отправить</button>
+        </form>
+        <button id="modal-close" class="modal__close" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>  
+    </div>
   </section>
   <!-- /.modal -->
   <script src="js/scripts.js"></script>
